@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Ratings for Hotel</title>
+    </head>
+    <style>
+     #prediction{
+        color:red;
+        }  
+    </style>
+    <body>
+        
+        <form action="/test" method="post">
+            <div>
+                <h1 align="center">Hotel Rating Prediction</h1>
+            </div>
+            <div align="center">
+                <label align="center"><b>Please enter the hotel review:</b></label><br/>
+                <textarea id="review" name="review" rows="4" cols="50" ></textarea></p>
+                <input type = "submit" value="Predict" style="background-color:#00b661;color: white;"></input>
+            </div>
+            <div id="prediction" align="center">
+            {% if context %}
+                <p> <strong>The rating for the given review: " {{context['review_to_be_analyzed']}} " is - {{context['predictions']}} </strong> </p>
+            {% endif %}
+            </div>
+        </form>
+    </body>
+</html>
