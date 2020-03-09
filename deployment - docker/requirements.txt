@@ -1,0 +1,5 @@
+flask
+json5==0.8.5
+requests
+xgboost
+waitress
