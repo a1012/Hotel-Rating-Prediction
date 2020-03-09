@@ -3,10 +3,9 @@ from dependecy import dependency,give_prediction
 import json
 import requests
 import logging
-from waitress import serve
 
 app = Flask(__name__, template_folder='template')
-app.config["DEBUG"] = False
+app.config["DEBUG"] = True
 @app.route("/")
 def data_upload():
     return render_template('reviewdata.html')
@@ -26,5 +25,5 @@ def display_prediction():
     
 
 if __name__ == '__main__':
-    #app.run()
-    serve(app, host="0.0.0.0", port=8080)
+    
+    app.run()
