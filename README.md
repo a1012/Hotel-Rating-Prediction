@@ -1,5 +1,5 @@
 # Springboard-Capstone-project
-# Predicting hotel Rating from Hotel Reviews and Price
+# Predicting Hotel Rating Based on User Reviews and Hotel Price
 In recent years, the growth rate of online hotel searching has been increased much faster and makes this online hotel searching a very difficult task due to the abundant amount of online information. Reviews written by the travelers replaces the word-of-mouth but then to search becomes the time consuming task based on user preference. Reviews crawled from the travelers visiting sites are a common and valuable source of information for recommendation of a hotel.This model  will give the hotel rating to  the travelers by analyzing the other travelers reviews together with the hotel title and price.Thus, it will save  the time of traveller and will give the best hotel to stay.
 
 # Dataset:
